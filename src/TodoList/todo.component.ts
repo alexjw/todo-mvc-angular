@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
     selector:'Todo',
-    template: `<li>{{text}}</li>`
+    template:`<li class="{{done ? 'complete' : ''}}">{{text}} <input type="checkbox" [(ngModel)]="done"></li>`
 })
 
 
